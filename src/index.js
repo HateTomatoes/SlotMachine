@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './global.css';
+import App from './pages/App';
 import * as serviceWorker from './serviceWorker';
+
+// rem适配
+const idealViewWidth = window.screen.width;
+const BASICVALUE = 1080;
+document.documentElement.style.fontSize = `${(idealViewWidth / BASICVALUE) * 100}px`;
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

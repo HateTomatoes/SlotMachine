@@ -1,0 +1,63 @@
+.root {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.slotMach {
+    width: 9.12rem;
+    margin-top: .90rem;
+    position: relative;
+    display: flex;
+    /*justify-content: center;*/
+}
+
+.slotMach > img {
+    width: 9.12rem;
+    height: 5.3622rem;;
+}
+
+.rollingArea {
+    position: absolute;
+    width: 8.00rem;
+    top: .10rem;
+    left: .56rem;
+    display: inline-flex;
+}
+
+.rollingArea > img {
+    width: 8.00rem;
+    height: 5.0091rem;
+    z-index: 9;
+}
+
+.scrollList {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.scrollList > dd {
+    margin: 0;
+    padding: 0;
+    margin-inline-start: 0;
+    flex: 1;
+    background-image: url("./img/game_step.png");
+    /*background-position: center;*/
+    background-repeat: repeat-y;
+    background-size: 2.62rem;
+}
+
+.scrollList > dd > img {
+    width: 100%;
+}
